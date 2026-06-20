@@ -36,8 +36,7 @@ pipeline {
   }
 
   failure {
-   echo 'Pipeline FAILED LAAAARNNN
-!'
+   echo 'Pipeline FAILED LAAAARNNN!'
   }
  }
 }
