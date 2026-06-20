@@ -18,7 +18,7 @@ pipeline {
 
   stage('Test') {
    steps {
-    echo 'Tests passed!'
+    echo 'Tests passed. Mubarak.!'
    }
   }
 
@@ -32,11 +32,12 @@ pipeline {
 
  post {
   success {
-   echo 'Pipeline SUCCESS!'
+   echo 'Pipeline SUCCESS WINNNN!'
   }
 
   failure {
-   echo 'Pipeline FAILED!'
+   echo 'Pipeline FAILED LAAAARNNN
+!'
   }
  }
 }
