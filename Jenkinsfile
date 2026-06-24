@@ -44,4 +44,4 @@ pipeline {
  post {
  success { echo 'Pipeline complete!' }
  failure { echo 'Check logs!' }
- 
+} 
