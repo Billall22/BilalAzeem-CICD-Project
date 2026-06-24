@@ -1,7 +1,7 @@
 pipeline {
  agent any
  environment {
- DOCKER_IMAGE = 'Billall22/BilalAzeem-CICD-Assignment'
+ DOCKER_IMAGE = 'billall22/bilalazeem-cicd-assignment'
  IMAGE_TAG = "${BUILD_NUMBER}"
  }
  stages {
@@ -33,10 +33,10 @@ pipeline {
  }
  stage('Deploy') {
  steps {
- sh 'docker stop jenkins-demo || true'
- sh 'docker rm jenkins-demo || true'
+ sh 'docker stop bilalazeem-cicd-assignment || true'
+ sh 'docker rm bilalazeem-cicd-assignment || true'
  sh 'docker pull $DOCKER_IMAGE:latest'
- sh 'docker run -d -p 3000:3000 --name BilalAzeem-CICD-Assignment $DOCKER_IMAGE:latest'
+ sh 'docker run -d -p 3000:3000 --name bilalazeem-cicd-assignment $DOCKER_IMAGE:latest'
  echo 'App live at localhost:3000!'
  }
  }
